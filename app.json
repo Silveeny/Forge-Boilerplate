@@ -1,0 +1,49 @@
+{
+  "name": "forge-rcdb.nodejs",
+  "description": "Autodesk Forge - Responsive Connected Database",
+  "repository": "https://github.com/Autodesk-Forge/forge-rcdb.nodejs",
+  "logo": "https://github.com/Autodesk-Forge/forge-rcdb.nodejs/resources/img/forge.png",
+  "keywords": ["autodesk", "forge", "node", "express"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment, defaulted to production",
+      "value": "production"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "This forces Heroku to install devDependencies, needed to build the App. Must be false!",
+      "value": "false"
+    },
+    "FORGE_CLIENT_ID": {
+      "description": "Your Forge Client ID API Key",
+      "value": "J2vukKkuFLCw9rDYJT6r3B55ujRVzHUt"
+    },
+    "FORGE_CLIENT_SECRET": {
+      "description": "Your Forge Client Secret API Key",
+      "value": "PmNWszFwRcg8TyS8"
+    },
+    "RCDB_CONNECTION_STRING": {
+      "description": "Entire MongoDB connecion string, leave 'RCDB_HOST' and 'RCDB_PORT' empty if this is specified but be sure to specify 'RCDB_DBNAME'",
+      "value": "mongodb://admin:admin@cluster0-shard-00-00-0a44j.mongodb.net:27017,cluster0-shard-00-01-0a44j.mongodb.net:27017,cluster0-shard-00-02-0a44j.mongodb.net:27017/forge-rcdb?replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&ssl=true"
+    },    
+    "RCDB_DBHOST": {
+      "description": "URL for Database",
+      "value": ""
+    },
+    "RCDB_PORT": {
+      "description": "DB port",
+      "value": ""
+    },
+    "RCDB_DBNAME": {
+      "description": "DB name",
+      "value": "forge-rcdb"
+    },
+    "RCDB_USER": {
+      "description": "DB Username",
+      "value": "admin"
+    },
+    "RCDB_PASS": {
+      "description": "DB Password",
+      "value": "admin"
+    }
+  }
+}
